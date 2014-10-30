@@ -1,0 +1,177 @@
+/* Empty. Add your own CSS if you like */
+.my-item {
+  left: 0;
+  right: 0;
+}
+
+/* General styles */
+html, body {
+    background-color: #fafafa;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center{
+    display: block;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4{
+  color: black;
+  font-family: 'Open sans', sans-serif;
+}
+.hidden{
+    display: none;
+}
+
+/* Retina @2x 620px-800px*/
+
+/*#card-container{
+  max-width: 620px;
+  max-height: 800px;
+  width: 95%;
+  height: 85%;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+#card-container .background-card-img{
+  width: 100%;
+  height: 100%;
+}
+
+#card-container .card-bottom-pane{
+  position: relative;
+  width: 100%;
+  height: 37.5%;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+#card-container .card-bottom-pane img{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#card-container .card-bottom-pane .connection-nr{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2673b0;
+  border-radius: 50%;
+  margin: 15px -15px 0 0;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+#card-container .card-bottom-pane .connection-nr p{
+  text-align: center;
+  font-size: 35px;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 25px;
+  color: white;
+  cursor: default;
+}
+
+#card-container .card-bottom-pane .connection-info-container{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+#card-container .card-bottom-pane .connection-info-container h3{
+  font-weight: 100;
+}*/
+
+
+/*Non retina 310px-400px */
+
+#card-container{
+
+  max-width: 310px;
+  max-height: 400px;
+  width: 95%;
+  height: 85%;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+#card-container h1, #card-container h2, #card-container h3,#card-container h4{
+  color: white;
+  font-family: 'Open sans', sans-serif;
+}
+.swipe-card{
+
+  max-width: 310px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+
+}
+#card-container .background-card-img{
+  width: 100%;
+  height: 100%;
+}
+
+#card-container .card-bottom-pane{
+  position: absolute;
+  width: 100%;
+  height: 37.5%;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+#card-container .card-bottom-pane img{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#card-container .card-bottom-pane .connection-nr{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2673b0;
+  border-radius: 50%;
+  margin: 7px -7px 0 0;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+#card-container .card-bottom-pane .connection-nr p{
+  text-align: center;
+  font-size: 15px;
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-top: 8px;
+  color: white;
+  cursor: default;
+}
+
+#card-container .card-bottom-pane .connection-info-container{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+#card-container .card-bottom-pane .connection-info-container h2{
+  font-size: 15px;
+}
+
+#card-container .card-bottom-pane .connection-info-container h3{
+  font-weight: 100;
+  font-size: 12px;
+  margin-top: 5px;
+}

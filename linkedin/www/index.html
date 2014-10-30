@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ionic-contrib-tinder-cards/ionic.tdcards.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <!-- Auth0 Login Widget -->
+    <!-- // <script src="lib/auth0-widget.js/build/auth0-widget.js"></script> -->
+    <script src="lib/auth0-lock/build/auth0-lock.js"></script>
+
+
+    <!-- lodash -->
+ <script src="lib/lodash/dist/lodash.min.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Cookies are used by auth0-angular -->
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+
+    <!-- angular storage -->
+    <script src="lib/a0-angular-storage/dist/angular-storage.js"></script>
+    <!-- angular-jwt -->
+    <script src="lib/angular-jwt/dist/angular-jwt.js"></script>
+    <!-- Auth0 Angular module -->
+    <script src="lib/auth0-angular/build/auth0-angular.js"></script>
+
+
+    <!-- Restangular Angular module -->
+    <script src="lib/restangular/dist/restangular.min.js"></script>
+
+    <script src="lib/collide/collide.js"></script>
+
+    <script src="lib/ionic-contrib-tinder-cards/ionic.tdcards.js"></script>
+      
+
+    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+
+     <!-- inject:js -->
+    <script src="js/messaging/messaging.module.js"></script>
+    <script src="js/messaging/controllers/messagingController.js"></script>
+    <script src="js/home/home.module.js"></script>
+    <script src="js/home/services/ProfileService.js"></script>
+    <script src="js/home/controllers/matchesController.js"></script>
+    <script src="js/home/controllers/contentController.js"></script>
+    <script src="js/home/controllers/cardController.js"></script>
+    <script src="js/core/coreModule.js"></script>
+    <script src="js/core/services/dataServiceConstants.js"></script>
+    <script src="js/core/services/dataService.js"></script>
+    <script src="js/authentication/authentication.module.js"></script>
+    <script src="js/authentication/controllers/loginController.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/Constants.js"></script>
+    <!-- endinject -->
+    
+    <script src="cordova.js"></script>
+
+  </head>
+ <body ng-app="linkedin" animation="slide-left-right-ios7" no-scroll>
+    <ion-nav-view></ion-nav-view>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<ion-side-menus>
+
+    <!-- Center content -->
+    <ion-side-menu-content>
+      <ion-header-bar class="bar-dark">
+        <button menu-toggle="left" class="button button-icon icon ion-gear-a"></button>
+        <h1 class="title">Lightning</h1>
+        <button menu-toggle="right" class="button button-icon icon ion-chatbox"></button>
+      </ion-header-bar>
+      <ion-content scroll="false">
+      <td-cards>
+        <td-card ng-repeat="card in content.matchingProfiles" on-destroy="content.cardDestroyed($index)" on-swipe-left="content.cardSwipedLeft($index, card)" on-swipe-right="content.cardSwipedRight($index, card)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{card.index}}" id="card-container" ng-controller="CardCtrl as cardCtrl">
+          
+         <div class="background-card-img" style="background: url({{card.picture}})no-repeat top center; background-size: cover;"></div>
+          <div class="card-bottom-pane">
+            <img class="bottom-pane" src="img/bottom-pane.png"/>
+            <div class="connection-nr">
+                <p>1</p>
+            </div>
+            <div class="connection-info-container">
+                <h2>{{card.given_name}}</h2>
+                <h3>{{card.headline}}</h3>
+                <h3>Aarhus University</h3>
+            </div>
+        </div>
+          
+        </td-card>
+      </td-cards>
+      </ion-content>
+    </ion-side-menu-content>
+
+    <!-- Left menu -->
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">{{content.profile.name}}</h1>
+      </ion-header-bar>
+    </ion-side-menu>
+    <!-- Left menu -->
+    <ion-side-menu side="right">
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Network</h1>
+      </ion-header-bar>
+      <ion-content ng-controller="MatchesCtrl as mctrl">
+ <div class="list">
+      
+       <a class="item item-avatar" ng-click="content.go('/messaging/1234')"
+      ng-repeat="match in mctrl.matches">
+      <img src="{{match.picture}}">
+      <h2>{{match.given_name}}</h2>
+      <p>"Hey, lets meet soon!"</p>
+    </a>
+  </div>
+      </ion-content>
+    </ion-side-menu>
+
+  </ion-side-menus>

@@ -1,0 +1,26 @@
+<ion-pane  class="messaging-view">
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Ioinc Chat</h1>
+    </ion-header-bar>
+
+    <ion-content class="content-stable" ng-style="{ bottom: messageCtrl.data.keyboardHeight + 'px' }">
+
+      <div ng-repeat="message in messageCtrl.messages" ng-class="{ other: message.userId != myId }" class="message">
+
+        <div class="photo icon ion-person"></div>
+        <div class="message"><span>{{ message.text }}</span>
+        </div>
+
+      </div>
+
+    </ion-content>
+
+    <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Type your message" on-return="messageCtrl.sendMessage(); messageCtrl.closeKeyboard()" ng-model="messageCtrl.data.message" on-focus="messageCtrl.inputUp()" on-blur="messageCtrl.inputDown()" />
+      </label>
+      <button class="button button-clear" ng-click="messageCtrl.sendMessage()">
+        Send
+      </button>
+    </ion-footer-bar>
+  </ion-pane>
