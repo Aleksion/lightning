@@ -34,7 +34,7 @@ namespace coffeeinService.Controllers
         [Route("api/user/{userId}/profiles")]
         public IEnumerable<Profile> GetPotentialMatches(string userId)
         {
-            var userLikes = LikeManager.Query().Where(d => d.UserId == userId).Where(d => d.Type == "like").ToList();
+            var userLikes = LikeManager.Query().Where(d => d.UserId == userId).Where(d => d.Type == "like" || d.Type == "dislike").ToList();
             var potentialMatches = Query().Where(d => d.UserId != userId).Where(d => d.Type == "profile").ToList();
 
             return potentialMatches.Except(potentialMatches.Join(userLikes, u => u.UserId, p => p.LikedUser, (u,p)=> u));

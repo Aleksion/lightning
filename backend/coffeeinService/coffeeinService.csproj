@@ -74,6 +74,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Data.OData.5.6.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -214,14 +215,17 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\LikeController.cs" />
+    <Compile Include="Controllers\DislikeController.cs" />
     <Compile Include="Controllers\MatchController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="DataObjects\BaseDocument.cs" />
+    <Compile Include="DataObjects\Dislike.cs" />
     <Compile Include="DataObjects\Like.cs" />
     <Compile Include="DataObjects\Match.cs" />
     <Compile Include="DataObjects\Message.cs" />
     <Compile Include="DataObjects\Profile.cs" />
+    <Compile Include="DocumentDbWiring\DocumentDbContext.cs" />
     <Compile Include="DocumentDbWiring\UserDocumentController.cs" />
     <Compile Include="DocumentDbWiring\DocumentController.cs" />
     <Compile Include="DocumentDbWiring\UserDocumentDomainManager.cs" />
